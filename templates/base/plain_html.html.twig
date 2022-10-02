@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello BaseController!{% endblock %}
+{% block title %}Plain HTML!{% endblock %}
 
 {% block body %}
 <style>
@@ -9,9 +9,9 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>CSRF token validation ✅</h1>
+    <h1>CSRF token validation</h1>
 
-    <form action="{{ url('csrf_token') }}" method="post">
+    <form action="{{ url('plain_html') }}" method="post">
         <label for="name">Name</label>
         <input type="text" name="name" id="name">
 
